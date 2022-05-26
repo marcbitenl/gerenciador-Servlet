@@ -11,7 +11,8 @@
 
 	<form action="${linkServletNovaEmpresa}" method="post">
 	
-	Nome: <input type="text" name="nome" > 
+	Nome: <input type="text" name="nome" >
+	Data Abertura: <input type="text" name="data" > 
 	
 	<input type="submit" />
 	
