@@ -12,4 +12,4 @@
 
 # Certificado
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+https://cursos.alura.com.br/certificate/marcbitenl/servlets-fundamentos-programacao-web-java
