@@ -13,3 +13,22 @@
 # Certificado
 
 https://cursos.alura.com.br/certificate/marcbitenl/servlets-fundamentos-programacao-web-java
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Formação Spring Framework
+
+### Java Servlet: autenticação, autorização e o padrão MVC
+
+### Tópicos abordados
+
+- Desenvolve um sistema com autenticação e autorização
+- Use o objeto HttpSession e aprenda sobre Cookies
+- Construa as camadas MVC baseados em Filters e Servlets
+- Faço deploy no servidor Jetty
+- Implemente o seu próprio WebService com JSON e XML
+
+# Certificado
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
