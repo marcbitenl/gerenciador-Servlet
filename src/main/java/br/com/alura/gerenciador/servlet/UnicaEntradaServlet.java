@@ -13,6 +13,7 @@ import br.com.alura.gerenciador.acao.AlteraEmpresa;
 import br.com.alura.gerenciador.acao.ListaEmpresas;
 import br.com.alura.gerenciador.acao.MostraEmpresa;
 import br.com.alura.gerenciador.acao.NovaEmpresa;
+import br.com.alura.gerenciador.acao.NovaEmpresaForm;
 import br.com.alura.gerenciador.acao.RemoveEmpresa;
 
 @WebServlet("/entrada")
@@ -36,22 +37,25 @@ public class UnicaEntradaServlet extends HttpServlet {
 			nome = acao.executa(request, response);
 
 		} else if (paramAcao.equals("MostraEmpresa")) {
-
 			MostraEmpresa acao = new MostraEmpresa();
 			nome = acao.executa(request, response);
 
 		} else if (paramAcao.equals("AlteraEmpresa")) {
-
 			AlteraEmpresa acao = new AlteraEmpresa();
 			nome = acao.executa(request, response);
+			
 		} else if (paramAcao.equals("NovaEmpresa")) {
 			NovaEmpresa acao = new NovaEmpresa();
+			nome = acao.executa(request, response);
+			
+		}else if (paramAcao.equals("NovaEmpresaForm")) {
+			NovaEmpresaForm acao = new NovaEmpresaForm();
 			nome = acao.executa(request, response);
 		}
 		
 		String[] tipoEENdereco = nome.split(":");
 		if(tipoEENdereco[0].equals("forward")) {
-		RequestDispatcher rd = request.getRequestDispatcher(tipoEENdereco[1]); 
+		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/view/" + tipoEENdereco[1]); 
 		rd.forward(request, response);
 		} else {
 			response.sendRedirect(tipoEENdereco[1]);
