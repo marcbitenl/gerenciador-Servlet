@@ -12,12 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.alura.gerenciador.modelo.Banco;
 import br.com.alura.gerenciador.modelo.Empresa;
 
-public class NovaEmpresaForm implements Acao {
+public class NovaEmpresaForm  implements Acao {
 
 	public String executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-
-
 		return "forward:formNovaEmpresa.jsp";
 	}
 }

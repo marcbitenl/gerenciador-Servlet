@@ -11,25 +11,23 @@ import javax.servlet.http.HttpSession;
 import br.com.alura.gerenciador.modelo.Banco;
 import br.com.alura.gerenciador.modelo.Empresa;
 
-public class ListaEmpresas implements Acao{
+public class ListaEmpresas implements Acao {
 
-	public String executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String executa(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
-		HttpSession sessao = request.getSession();
-		if(sessao.getAttribute("usuariologado") == null) {
-			return "redirect:entrada?acao=LoginForm";
-		}
-		
-		
+
 		System.out.println("listando empresas");
 
 		Banco banco = new Banco();
 		List<Empresa> lista = banco.getEmpresas();
+
 		request.setAttribute("empresas", lista);
+
+
 		
+
 		return "forward:listaEmpresas.jsp";
-
-
 	}
 
 }

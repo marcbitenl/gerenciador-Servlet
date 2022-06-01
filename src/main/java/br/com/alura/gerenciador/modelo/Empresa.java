@@ -3,11 +3,10 @@ package br.com.alura.gerenciador.modelo;
 import java.util.Date;
 
 public class Empresa {
-	
+
 	private Integer id;
 	private String nome;
 	private Date dataAbertura = new Date();
-	
 	
 	public Integer getId() {
 		return id;
@@ -29,8 +28,4 @@ public class Empresa {
 	public Date getDataAbertura() {
 		return dataAbertura;
 	}
-	
-	
-	
-
 }

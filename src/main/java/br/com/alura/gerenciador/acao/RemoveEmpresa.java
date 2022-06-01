@@ -8,10 +8,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.alura.gerenciador.modelo.Banco;
 
-public class RemoveEmpresa implements Acao {
+public class RemoveEmpresa  implements Acao {
 
 	public String executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	
 		System.out.println("acao removendo empresa");
 		
 		String paramId = request.getParameter("id");
@@ -23,6 +23,6 @@ public class RemoveEmpresa implements Acao {
 		banco.removeEmpresa(id);
 		
 		return "redirect:entrada?acao=ListaEmpresas";
-
+	
 	}
 }
